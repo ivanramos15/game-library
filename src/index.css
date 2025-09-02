@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #26292d;
+}
+
+h1 {
+  margin: 20px;
+  background-color: #01e305;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.game-box {
+  /* Avoid fix width in containers */
+  /* width: 320px; */
+  background-color: #171718;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  /* y x blur spread (inset sa loob naman yung shadow)*/
+  box-shadow: 0 0 5px 2px rgb(0, 0, 0, 0.15);
+}
+
+.game-details {
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 20px;
+  margin-top: 20px;
+}
+
+.image-box {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 300px;
+  transition: 0.2s;
+}
+
+.game-title {
+  text-align: center;
+  font-size: 18px;
+}
+
+.price {
+  background-color: #01e305;
+  padding: 5px;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  background-color: #494a4f;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #01e305;
+  color: black;
+}
+
+button:hover svg {
+  stroke: black;
+  fill: black;
+}
+
+span {
+  line-height: 0;
+  display: inline-block;
+  margin: 0;
+}
+
+.heart-btn {
+  display: flex;
+  justify-content: center;
+  background-color: #494a4f;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.icon-heart {
+  stroke: white;
+  height: 25px;
+  justify-self: center;
+  align-self: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.icon-heart:hover,
+.heart-btn:hover .icon-heart {
+  fill: #df3737;
+  stroke: #df3737;
+}
+
+.shop-icon {
+  height: 20px;
+  stroke: white;
+  display: block;
+}
+
+.cart-btn {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  padding: 10px;
+  left: 50px;
+  background-color: red;
+  border-radius: 50%;
+  background-color: #8c8d8f;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.cart-btn:hover {
+  scale: 1.2;
+}
+
+img:hover {
+  scale: 1.1;
+}
